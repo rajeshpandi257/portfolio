@@ -1,0 +1,127 @@
+.skills_container {
+  grid-template-columns: 1fr;
+  column-gap: 3rem;
+  align-items: center;
+}
+.skills_content {
+  margin-top: 5%;
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2rem 4rem;
+  border-radius: 1.25rem;
+}
+.skills {
+  position: relative;
+  top: 0;
+}
+.skills_underline::after {
+  content: "";
+  position: absolute;
+  left: 45%;
+  bottom: 75%;
+  border: 2px solid blueviolet;
+  width: 6%;
+  border-radius: 2px;
+}
+.skills_icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 100px;
+}
+
+.skills_title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  text-align: center;
+  margin-bottom: var(--mb-1-5);
+}
+.skills_box {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 2.5rem;
+}
+.skills_group {
+  display: grid;
+  align-items: flex-start;
+  row-gap: 1rem;
+}
+.skills_data {
+  display: flex;
+  column-gap: 0.75rem;
+  line-height: 15px;
+}
+.skills .bx-badge-check {
+  font-size: 1rem;
+  color: rgb(12, 239, 8);
+}
+
+.skills_name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 19px;
+}
+.skills_level {
+  font-size: var(--tiny-font-size);
+  line-height: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .skills_container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .skills_underline::after {
+    content: "";
+    position: absolute;
+    left: 43%;
+    bottom: 86%;
+    border: 2px solid blueviolet;
+    width: 8.5%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .skills_container {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+  .skills_box {
+    display: block;
+  }
+  .skills_content {
+    margin-left: 3rem;
+  }
+  .skills_underline::after {
+    content: "";
+    position: absolute;
+    left: 39%;
+    bottom: 89%;
+    border: 2px solid blueviolet;
+    width: 14%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .skills_box {
+    display: block;
+    margin-left: 0;
+  }
+  .skills_underline::after {
+    content: "";
+    position: absolute;
+    left: 39%;
+    bottom: 89%;
+    border: 2px solid blueviolet;
+    width: 15%;
+  }
+  .skills_name {
+    font-size: var(--small-font-size);
+  }
+  .skills_data {
+    margin-left: 0;
+  }
+  .skills_content {
+    margin-left: 5rem;
+    margin-top: 2rem;
+  }
+}

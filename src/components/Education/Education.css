@@ -1,0 +1,133 @@
+.education_tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(mb--2);
+}
+/* .education_content {
+  display: none;
+}
+.education_active {
+  display: block;
+} */
+.education_container {
+  max-width: 765px;
+  margin-left: 35%;
+}
+.education_button {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  text-align: center;
+  margin: 0 var(--mb-1);
+}
+.education_icon {
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+.education_section {
+  display: grid;
+  grid-template-columns: 0.5fr;
+  justify-content: center;
+}
+.education_data {
+  display: grid;
+  grid-template-columns: 1fr max-content 3fr;
+  column-gap: 1.5rem;
+}
+.education_title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+.education_subtitle {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+.education_calender {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+.education_round {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: rgb(111, 5, 116);
+  border-radius: 50%;
+}
+.education_line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: rgb(111, 5, 116);
+  transform: translate(6px, -7px);
+}
+.education {
+  position: relative;
+}
+.edu_underline::after {
+  content: "";
+  position: absolute;
+  left: 42%;
+  bottom: 73%;
+  border: 2px solid blueviolet;
+  width: 13%;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 992px) {
+  /* .education_container {
+    margin-left: 25%;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  .education_data {
+    grid-template-columns: 1fr max-content 2fr;
+  }
+  .education_container {
+    margin-left: 25%;
+  }
+  .edu_underline::after {
+    content: "";
+    position: absolute;
+    left: 37%;
+    bottom: 85%;
+    border: 2px solid blueviolet;
+    width: 20%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .education_data {
+    grid-template-columns: 1fr max-content 2fr;
+  }
+  .education_container {
+    margin-left: 20%;
+  }
+  .education_section {
+    grid-template-columns: initial;
+  }
+  .edu_underline::after {
+    content: "";
+    position: absolute;
+    left: 33%;
+    bottom: 85%;
+    border: 2px solid blueviolet;
+    width: 25%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .education_data {
+    grid-template-columns: 1fr max-content 1fr;
+  }
+  .education_container {
+    margin-left: 20%;
+  }
+  .edu_underline::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: 85%;
+    border: 2px solid blueviolet;
+    width: 27%;
+  }
+}
