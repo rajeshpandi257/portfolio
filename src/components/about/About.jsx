@@ -13,11 +13,10 @@ const About = () => {
         <img src={img} alt="" className="about_img" />
         <div className="about_data">
           <p className="about_description">
-            I am fresher and I am looking for an front end developer role.I have
-            a good knowledge in frond-end technologies like
-            HTML,CSS,Javasctipt,React js,Bootstrap.I am very passinate about my
-            work and vert hard working.I have attached my resume for your
-            verifications
+            I am a front-end developer with a strong foundation in HTML, CSS, JavaScript, and React.js.
+            Passionate about creating responsive and user-friendly web applications,
+            I am eager to apply my skills and continue learning in a professional environment. 
+            I enjoy solving problems and am committed to writing clean, efficient code.
           </p>
           <a download="" href={resume} className="button button--flex">
             <span></span>
