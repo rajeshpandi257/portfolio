@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../../assets/undraw_profile_re_4a55.svg";
-import resume from "../../assets/resume-rajesh.pdf";
+import resume from "../../assets/Rajesh Kannan-Resume-full stack.pdf";
 import "./About.css";
 
 const About = () => {
